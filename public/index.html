@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="lal.js""></script>
+
+  <style>
+    body { padding: 0; margin: 0; overflow: hidden; }
+
+    /* make slideshow fill the screen */
+    #slideshow {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      display: none; /* show it in mode 3 via JS */
+      background: rgb(200,200,200);
+      z-index: 9999;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="videoContainer"></div>
+
+  <!-- THIS is what your JS is looking for -->
+  <img id="slideshow" alt="slideshow">
+</body>
+</html>
