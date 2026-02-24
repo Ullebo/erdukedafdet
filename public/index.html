@@ -1,35 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tristhedskøen</title>
 
-  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
-  <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
-  <script language="javascript" type="text/javascript" src="p5.sound.js"></script>
-  <script language="javascript" type="text/javascript" src="lal.js""></script>
+    <!-- p5 -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
 
-  <style>
-    body { padding: 0; margin: 0; overflow: hidden; }
+    <!-- p5.sound (VIGTIG fordi du bruger loadSound) -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
 
-    /* make slideshow fill the screen */
-    #slideshow {
-      position: fixed;
-      inset: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: contain;
-      display: none; /* show it in mode 3 via JS */
-      background: rgb(200,200,200);
-      z-index: 9999;
-    }
-  </style>
-</head>
+    <!-- din sketch -->
+    <script src="./lal.js"></script>
 
-<body>
-  <div id="videoContainer"></div>
-
-  <!-- THIS is what your JS is looking for -->
-  <img id="slideshow" alt="slideshow">
-</body>
+    <style>
+      html, body { margin: 0; padding: 0; overflow: hidden; }
+    </style>
+  </head>
+  <body></body>
 </html>
