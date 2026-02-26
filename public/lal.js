@@ -441,6 +441,14 @@ function keyPressed() {
   // Mode 1 -> Mode 2 er nu kun via køsystemet (auto-advance)
 }
 
+function touchStarted() {
+  if (mode === 0) {
+    getAudioContext().resume(); // vigtigt for iOS
+    setMode(1);
+  }
+  return false;
+}
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   iframe.position(width / 2 - videoWidth / 2, height / 2 - videoHeight / 2);
